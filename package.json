@@ -1,5 +1,5 @@
 {
-  "name": "apartment_lab",
+  "name": "car_lab",
   "version": "0.0.1",
   "description": "a lab for playing with constructors and prototypes in JS",
   "main": "index.js",
