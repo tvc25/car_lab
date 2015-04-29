@@ -1,7 +1,7 @@
 # Prototype Body Shop
 ## Implement the following
 
-The goal of this homework is to get you comfortable with writing and implementing prototypes and constructors. We will also introduce testing.
+The goal of this homework is to get you comfortable with writing and implementing prototypes and constructors. It will also introduce testing.
 
 
 1. Fork the repository
