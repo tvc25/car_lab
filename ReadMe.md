@@ -1,63 +1,13 @@
 # Prototype Body Shop
 ## Implement the following
 
-The idea of this lab is to get you comfortable with writing and implementing prototypes and constructors. We will also review testing in the lab. As you work through the phases, run `npm test` to make sure you are implementing everything correctly.
+The goal of this homework is to get you comfortable with writing and implementing prototypes and constructors. We will also introduce testing.
 
-### Phase I
 
 1. Fork the repository
 2. Clone and cd into the car_lab folder
 3. run `npm install`
+4. run `npm install mocha`
+5. run `npm test`
 
-Once you have completed these steps, we can start thinking about our Car class. It should have the following:
-
-* make
-* model
-* year
-* state (this will be "on" or "off" - this does not mean a state like California or New Jersey)
-* color
-* previous_owners
-* current_owner
-
-As a default a `new Car` should have the following values:
-* previous_owners should be an empty array, `[]`.
-* current_owner: should be a string called "Manufacturer".
-* `state` should be `off`.
-
-We should also be able to do the following with our car.
-
-*  `Car#sale`, we should be able to sell a car to someone, which should update the `current_owner` and `previous_owners` array.
-
-* `Car#paint`, which should take a new color and update the color of the car to be new color.
-
-
-## Phase II
-
-Implement the following methods:
-
-* `Car#start` should change the state of the car to `on`.
-* `Car#off` should change the state to `off`.
-* `Car#driveTo`, it should `console.log` `"driving to <destination>"`, but only if the car `state` is `on`. *Note: this method needs to take a `destination` param.*
-* `Car#park` only if the car is `off` and if it's off console.log `parked!!`.
-
-
-## Phase III
-
-Add the following property to the constructor:
-
-* `passengers`
-
-it should default to an empty array.
-
-Implement the following methods:
-
-* `Car#pick_up` should take a `name` and `console.log` that you are `"driving to 'pick up <friend>'"`, but only if the `car` is `on`. It should also update the `passangers` array to include the new passanger.
-* `Car#dropOff` it should take a `name` and remove them from the `passengers` array, but only if they are in the array. It should also only drop them off if the car is `on`.
-
-
-
-
-
-
-
-
+Read the output to the console carefully. Open the folder in sublime and navigate to /spec/test.js and /src/car.js.  Write code in car.js to make any failing tests pass.  Once all tests are either passed or pending, go into test.js and search the file for the first instance of "xit".  Delete the "x" (change "xit" to "it") and run `npm test` again. Repeat until all 14 tests pass!
