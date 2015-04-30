@@ -1,5 +1,4 @@
 # Prototype Body Shop
-## Implement the following
 
 The goal of this homework is to get you comfortable with writing and implementing prototypes and constructors. It will also introduce testing.
 
@@ -16,3 +15,7 @@ The goal of this homework is to get you comfortable with writing and implementin
 * Write code in car.js to make any failing tests pass.
 
 * Once all tests are either passed or pending, go into test.js and search the file for the first instance of "xit". Delete the "x" (change "xit" to "it") and run `npm test` again. Repeat until all 14 tests pass!
+
+## Extension
+
+Write a test for parking the car.  (Hint: What happens to the state of the car when you park?  What usually happens to passengers when a car is parked?)
