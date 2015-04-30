@@ -18,4 +18,4 @@ The goal of this homework is to get you comfortable with writing and implementin
 
 ## Extension
 
-Write a test for parking the car.  (Hint: What happens to the state of the car when you park?  What usually happens to passengers when a car is parked?)
+Write a test for parking the car then make it pass.  (Hint: What happens to the state of the car when you park?  What usually happens to passengers when a car is parked?)
