@@ -11,7 +11,7 @@ describe('Car', function(){
     myCar = new Car("Dodge","Charger", 2015, "Red");
   });
 
-  // this is the passing test
+// Passes
 
   describe('#year', function(){
     it('should be the current year', function(){
@@ -19,14 +19,19 @@ describe('Car', function(){
     });
   });
 
+
+// Passes
+
   describe('#state', function(){
     it('should initially be off', function(){
       expect(myCar.state).to.equal("off");
     });
   });
 
+// Failing
+
   describe('#previousOwners', function(){
-    xit('should exist and initially be empty', function(){
+    it('should exist and initially be empty', function(){
       expect(myCar.previousOwners).to.exist.to.be.empty;
     });
   });
