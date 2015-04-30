@@ -15,6 +15,12 @@ Car.prototype.off = function(state){
 
 }
 
+Car.prototype.start = function(state){
+
+ this.state = "on";
+
+}
+
 Car.prototype.sale = function(newOwner){
 
 
@@ -25,11 +31,7 @@ Car.prototype.sale = function(newOwner){
 
 };
 
-Car.prototype.state = function(state){
 
-  return this.state = 'off';
-
-};
 
 Car.prototype.passengers = function(newColor){
 
@@ -47,9 +49,6 @@ Car.prototype.dropOff = function(newColor){
 
 };
 
-Car.prototype.start = function(newColor){
-
-};
 
 Car.prototype.paint = function(newColor){
 
