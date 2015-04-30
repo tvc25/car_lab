@@ -11,6 +11,8 @@ describe('Car', function(){
     myCar = new Car("Dodge","Charger", 2015, "Red");
   });
 
+  // this is the passing test
+
   describe('#year', function(){
     it('should be the current year', function(){
       expect(myCar.year).to.equal(2015);
@@ -18,7 +20,7 @@ describe('Car', function(){
   });
 
   describe('#state', function(){
-    xit('should initially be off', function(){
+    it('should initially be off', function(){
       expect(myCar.state).to.equal("off");
     });
   });
