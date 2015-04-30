@@ -32,21 +32,24 @@ Car.prototype.sale = function(newOwner){
 
 };
 
-Car.prototype.passengers = function(newColor){
-
-};
-
 Car.prototype.previousOwners = function(newColor){
 
 };
 
-Car.prototype.pickUp = function(newColor){
+Car.prototype.pickUp = function(){
 
+if (this.state === "on") {
+
+  this.passengers.push('john');
+
+  }
 };
 
-Car.prototype.dropOff = function(newColor){
+// Car.prototype.pickUp = function(state){
 
-};
+// this.state = "on";
+
+// };
 
 
 Car.prototype.paint = function(newColor){
