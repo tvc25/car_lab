@@ -20,7 +20,7 @@ describe('Car', function(){
   });
 
 
-// Passes
+
 
   describe('#state', function(){
     it('should initially be off', function(){
@@ -28,7 +28,7 @@ describe('Car', function(){
     });
   });
 
-// Failing
+// Passes
 
   describe('#previousOwners', function(){
     it('should exist and initially be empty', function(){
@@ -36,8 +36,10 @@ describe('Car', function(){
     });
   });
 
+// Failing
+
   describe('#currentOwner', function(){
-    xit('should initially be manufacturer', function(){
+    it('should initially be manufacturer', function(){
       expect(myCar.currentOwner).to.equal("Manufacturer");
     });
   });
