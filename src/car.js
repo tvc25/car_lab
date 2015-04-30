@@ -5,10 +5,49 @@ function Car(make, model, year, color){
   this.previousOwners = false;
   this.currentOwner = "Manufacturer";
   this.passengers = false;
+  this.color = 'Blue';
+
+}
+
+Car.prototype.off = function(state){
+
+ this.state = "off";
 
 }
 
 Car.prototype.sale = function(newOwner){
+
+
+  this.previousOwners.push(this.currentOwner);
+  
+  this.currentOwner = newOwner;
+
+
+};
+
+Car.prototype.state = function(state){
+
+  return this.state = 'off';
+
+};
+
+Car.prototype.passengers = function(newColor){
+
+};
+
+Car.prototype.previousOwners = function(newColor){
+
+};
+
+Car.prototype.pickUp = function(newColor){
+
+};
+
+Car.prototype.dropOff = function(newColor){
+
+};
+
+Car.prototype.start = function(newColor){
 
 };
 

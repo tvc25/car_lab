@@ -11,16 +11,11 @@ describe('Car', function(){
     myCar = new Car("Dodge","Charger", 2015, "Red");
   });
 
-// Passes
-
   describe('#year', function(){
     it('should be the current year', function(){
       expect(myCar.year).to.equal(2015);
     });
   });
-
-
-
 
   describe('#state', function(){
     it('should initially be off', function(){
@@ -28,23 +23,17 @@ describe('Car', function(){
     });
   });
 
-// Passes
-
   describe('#previousOwners', function(){
     it('should exist and initially be empty', function(){
       expect(myCar.previousOwners).to.exist.to.be.empty;
     });
   });
 
-// Passes
-
   describe('#currentOwner', function(){
     it('should initially be manufacturer', function(){
       expect(myCar.currentOwner).to.equal("Manufacturer");
     });
   });
-
-  // Failing
 
   describe('#passengers', function(){
     it('should exist and initially be empty', function(){
@@ -65,7 +54,7 @@ describe('Car', function(){
   });
 
   describe('#paint', function(){
-    xit('should update the color of myCar', function(){
+    it('should update the color of myCar', function(){
       myCar.paint("Blue");
       expect(myCar.color).to.equal("Blue");
     });
@@ -79,7 +68,7 @@ describe('Car', function(){
   });
 
   describe('#off', function(){
-    xit('should update the state to off', function(){
+    it('should update the state to off', function(){
       myCar.off();
       expect(myCar.state).to.equal("off");
     });
