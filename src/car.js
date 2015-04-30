@@ -4,11 +4,10 @@ function Car(make, model, year, color){
   this.state = "off";
   this.previousOwners = [];
   this.passengers = [];
-  this.color = 'Blue';
+  this.color = color;
+  this.currentOwner = "Manufacturer";
 
 }
-
-Car.prototype.currentOwner = "Manufacturer";
 
 Car.prototype.off = function(state){
 
@@ -32,10 +31,6 @@ Car.prototype.sale = function(newOwner){
 
 };
 
-Car.prototype.previousOwners = function(newColor){
-
-};
-
 Car.prototype.pickUp = function(){
 
 if (this.state === "on") {
@@ -45,14 +40,24 @@ if (this.state === "on") {
   }
 };
 
-// Car.prototype.pickUp = function(state){
+Car.prototype.dropOff = function(passenger){
 
-// this.state = "on";
+if (this.state === "on"){
 
-// };
+for (i = 0; i < this.passengers.length; i++) {
 
+  if (this.passengers[i] === passenger){
+        
+          this.passengers.splice(i, 1);
+        }
+    }
+  };
+
+};
 
 Car.prototype.paint = function(newColor){
+
+  this.color = newColor;
 
 };
 
