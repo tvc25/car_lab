@@ -4,6 +4,7 @@ function Car(make, model, year, color){
   this.state = "off";
   this.previousOwners = false;
   this.currentOwner = "Manufacturer";
+  this.passengers = false;
 
 }
 

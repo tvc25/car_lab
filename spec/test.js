@@ -36,7 +36,7 @@ describe('Car', function(){
     });
   });
 
-// Failing
+// Passes
 
   describe('#currentOwner', function(){
     it('should initially be manufacturer', function(){
@@ -44,8 +44,10 @@ describe('Car', function(){
     });
   });
 
+  // Failing
+
   describe('#passengers', function(){
-    xit('should exist and initially be empty', function(){
+    it('should exist and initially be empty', function(){
       expect(myCar.passengers).to.exist.to.be.empty;
     });
   });
